@@ -1,0 +1,93 @@
+
+.rodape {
+    margin-top: 1em;
+    padding: 1em 1em;
+    border-top: 2px solid lightgray;
+}
+
+.rodape__educacao {
+    display: none;
+}
+
+.rodape__educacao-online {
+    display: none;
+}
+.rodape__comunidade {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .rodape {
+        display: flex;
+        padding: 3em 1em;
+        justify-content: space-between;
+    }
+
+    .rodape__educacao {
+        display: block;
+        
+    }
+    
+    .rodape__educacao-online {
+        display: block;
+    }
+    .rodape__comunidade {
+        display: block;
+    }
+
+    .rodape__titulo {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .rodape__titulo-secundario {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+
+    }
+
+    .rodape__educacao--item {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 1em;
+
+    }
+
+    .rodape__educacao-online--item {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .rodape__comunidade--item {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .link__educacao-online {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .rodape__educacao {
+        border-left: 2px solid lightgray;
+        padding-left: 1em;
+    }
+
+    .rodape__educacao-online {
+        border-left: 2px solid lightgray;
+        padding-left: 1em;
+    }
+    .rodape__comunidade {
+        border-left: 2px solid lightgray;
+        padding-left: 1em;
+    }
+}
